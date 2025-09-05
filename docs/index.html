@@ -1,64 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sombras de la Gran Colombia – Documentación</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <h1>Sombras de la Gran Colombia</h1>
-    <p>Documentación y guía del proyecto</p>
+    <p>Plataformero narrativo 2D (estilo Celeste) que cuenta la Nueva Granada desde múltiples voces.</p>
     <nav>
       <a href="#introduccion">Introducción</a>
       <a href="#estructura">Estructura</a>
       <a href="#personajes">Personajes</a>
       <a href="#escenarios">Escenarios</a>
       <a href="#vidas">Vidas y poderes</a>
-      <a href="#videos">Tutoriales en video</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#videos">Tutoriales</a>
     </nav>
   </header>
 
   <main>
     <section id="introduccion">
       <h2>Introducción</h2>
-      <p>Breve descripción del videojuego, objetivos y estilo general.</p>
+      <p><strong>Sombras de la Gran Colombia</strong> es un videojuego educativo y narrativo que combina mecánicas de plataformas tipo <em>Celeste</em> con decisiones históricas. El jugador elige un rol (criollo, afrodescendiente, indígena, mujer revolucionaria) y vive la Nueva Granada hasta la formación/ruptura de la Gran Colombia.</p>
     </section>
 
     <section id="estructura">
-      <h2>Estructura del Proyecto</h2>
+      <h2>Estructura del proyecto</h2>
       <ul>
-        <li><strong>Assets/</strong>: recursos de Unity</li>
-        <li><strong>Scenes/</strong>: escenas principales</li>
-        <li><strong>Scripts/</strong>: lógica de juego en C#</li>
-        <li><strong>Docs/</strong>: documentación del proyecto</li>
+        <li><strong>Assets/</strong> → sprites, audio, UI</li>
+        <li><strong>Scenes/</strong> → escenas Unity (.unity, se crearán en Unity)</li>
+        <li><strong>Scripts/</strong> → C# (PlayerController, MenuController, GameManager...)</li>
+        <li><strong>Docs/</strong> → documentación (este sitio)</li>
       </ul>
     </section>
 
     <section id="personajes">
-      <h2>Personajes</h2>
-      <p>Explicación de los 4 personajes, habilidades, sprites y animaciones.</p>
+      <h2>Personajes / Roles</h2>
+      <ul>
+        <li><strong>Criollo</strong> — habilidades: persuasión narrativa; mecánica: interacción con NPCs y recolección de documentos.</li>
+        <li><strong>Afrodescendiente</strong> — habilidades: fuerza/resistencia; mecánica: romper obstáculos, acceso a caminos alternos.</li>
+        <li><strong>Indígena</strong> — habilidades: conocimiento del terreno; mecánica: descubrir atajos y rutas secretas.</li>
+        <li><strong>Mujer revolucionaria</strong> — habilidades: sigilo/espionaje; mecánica: misiones de entrega y comunicación.
+      </ul>
     </section>
 
     <section id="escenarios">
       <h2>Escenarios</h2>
-      <p>Descripción de tilesets, niveles, fondos, atmósfera.</p>
+      <p>Escenarios principales (cada uno será un capítulo): <strong>Virreinato / Plaza de Santafé, Llanos y Campañas, Campaña Libertadora (páramos), Congreso de Cúcuta</strong>. Tilesets diseñados en LibreSprite y exportados a PNG para Unity.</p>
     </section>
 
     <section id="vidas">
-      <h2>Vidas y Poderes</h2>
-      <p>Inspirado en <em>Celeste</em>: mecánicas de salto, resistencia, daño y objetos especiales.</p>
+      <h2>Vidas y poderes (mecánicas)</h2>
+      <p>Inspirado en Celeste: salto, doble salto/boost (dash), escalada limitada. Sistema de vidas por checkpoints: 3 intentos por checkpoint (ajustable). Coleccionables: fragmentos de luz que otorgan vida extra.</p>
+    </section>
+
+    <section id="roadmap">
+      <h2>Roadmap (versión inicial)</h2>
+      <ol>
+        <li>0.1 – Documentación, menu home y selección de rol (placeholder)</li>
+        <li>0.2 – Primer nivel jugable (Nueva Granada) con físicas y un rol</li>
+        <li>0.3 – Añadir 3 roles jugables, sistema de decisiones y HUD</li>
+      </ol>
     </section>
 
     <section id="videos">
-      <h2>Tutoriales en Video</h2>
-      <p>Lista de enlaces a videos que explican cada paso de la creación.</p>
+      <h2>Tutoriales en video (listado)</h2>
+      <ol>
+        <li>01 - Crear el Home y la navegación (Unity)</li>
+        <li>02 - Importar sprites desde LibreSprite</li>
+        <li>03 - PlayerController básico (salto, dash)</li>
+        <li>04 - Tilemap y diseño de nivel</li>
+        <li>05 - Sistema de roles y datos (ScriptableObject)</li>
+      </ol>
+      <p>Nota: los enlaces a los vídeos se agregarán cuando se publiquen.</p>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 Sombras de la Gran Colombia – Proyecto académico</p>
+    <p>&copy; 2025 Sombras de la Gran Colombia — Proyecto académico</p>
   </footer>
 </body>
 </html>
